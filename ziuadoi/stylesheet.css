@@ -1,0 +1,94 @@
+
+header{
+    background-color: rgba(248, 203, 0, 1);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 83px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+ }
+ 
+ #logo{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Helvetica';
+    font-size: 13px;
+    height: 17px;
+    left: 200px;
+    position: absolute;
+    text-align: left;
+    top: 20px;
+    width: 97px;
+ }
+
+#location {
+    top: 20px;
+    height: 7px;
+    width: 5px;
+}
+
+.container {
+    top: 20px;
+    display:inline-block;
+    font-family: 'Helvetica';
+    font-size: 8px;
+    left: 410px;
+    line-height: 16px;
+}
+
+ #city {
+    color: rgba(19, 19, 19, 1);
+    font-family: 'Helvetica';
+    font-size: 8px;
+    left: 410px;
+    line-height: 16px;
+    position: absolute;
+    top: 20px;
+    width: 87px;
+}
+
+.la {
+    color: rgba(99, 100, 216, 1);
+    top: 20px;
+    font-family: 'Helvetica';
+    font-size: 8px;
+    line-height: 16px;
+    text-align: left;
+}
+
+#phone {
+    color: rgba(19, 19, 19, 1);
+    font-family: 'Helvetica';
+    font-size: 8px;
+    left: 680px;
+    line-height: 16px;
+    position: absolute;
+    top: 20px;
+    width: 87px;
+}
+
+#call {
+    top: 20px;
+    height: 7px;
+    width: 5px;
+}
+
+#zero {
+    top: 20px;
+    font-family: 'Helvetica';
+    font-size: 8px;
+    line-height: 16px;
+    text-align: left;
+}
+
+.shipping {
+    position: absolute;
+    left: 780px;
+    height: 16px;
+    font-family: 'Helvetica';
+    font-size: 8px;
+    color: rgba(45, 45, 45, 1);
+    line-height: 16px;
+    top: 19px
+}
