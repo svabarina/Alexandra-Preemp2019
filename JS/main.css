@@ -128,3 +128,19 @@ body {
 .price::after {
     content: "$";
 }
+
+#custom-error {
+    display: none;
+    color: red;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.remove-item:hover {
+    cursor: pointer;
+}
+
+.add:hover, .remove:hover {
+    cursor: pointer;
+}
