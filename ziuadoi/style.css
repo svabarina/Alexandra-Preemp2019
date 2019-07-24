@@ -42,7 +42,10 @@ nav .upper-right-nav{
     justify-content: space-between;
 }
 
-
+.buttonla {
+    text-decoration: none;
+    color: rgba(99, 100, 216, 1);
+}
 
 .header-list{
     padding: 0;
@@ -55,8 +58,8 @@ nav .upper-right-nav{
     list-style-type: none;
 }
 .header-list a{
-    font-size: 14px;
     text-decoration: none;
+    font-size: 14px;
     color: black;
 }
 
@@ -71,9 +74,9 @@ nav .upper-right-nav{
     
 }
 
-.cream-image p{
+/* .cream-image p{
     
-}
+} */
 
 .lower-right-nav form, .search{
     width: 99%;
@@ -165,7 +168,7 @@ nav .upper-right-nav{
     width: 90%;
     box-shadow: -1px 1px 14px 0px rgba(150, 150, 150, 0.75);
     border-radius: 4px;
-    height: 450px;
+    /* height: 450px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -218,6 +221,12 @@ nav .upper-right-nav{
     flex-direction: row;
     justify-content: space-between;
 }
+
+.cream-cls {
+    color: rgba(99, 100, 216, 1);
+    text-decoration: none;
+}
+
 .brand{
     width: 50%;
     display: flex;
@@ -261,9 +270,7 @@ nav .upper-right-nav{
     margin-top: 50%x;
     
 }
-
-
-
+/* ////////////////////////////////////////// responsive ////////////////////////////////////////// */
 
 @media screen and (max-width: 1300px){
    
