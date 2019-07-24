@@ -20,7 +20,7 @@
                         <div class="upper-right-nav">
                             <div>
                                 <img src="D:\Projects\Alexandra-Preemp2019\ziuadoi\assets\location_filled.png" alt="location icon"/>
-                                My city: <span>Los Angeles</span>
+                                My city: <a class="buttonla" href="https://www.discoverlosangeles.com/">Los Angeles</a>
                             </div>
                             <div>
                                 <img src="D:\Projects\Alexandra-Preemp2019\ziuadoi\assets\phone_filled.png" alt="phone icon"/>
@@ -51,7 +51,7 @@
                     <div id="side-menu">
                         <div>
                             <h5>All categories</h5>
-                            <button class="list-button">FACE</button>
+                            <button onclick="myFunction()" class="list-button">FACE</button>
                             <ul id="myDIV">
                                 <li class="list-item active">Creams & Gel</li>
                                 <li class="list-item">Patches</li>
@@ -63,6 +63,11 @@
                                 <li class="list-item">Peeling</li>
                                 <li class="list-item">Masks</li>
                             </ul>
+                            <!-- <button onclick="myFunction()" class="list-button">BODY</button>
+                            <button onclick="myFunction()" class="list-button">FOOT</button>
+                            <button onclick="myFunction()" class="list-button">HANDS</button>
+                            <button onclick="myFunction()" class="list-button">HAIR</button>
+                            <button onclick="myFunction()" class="list-button">MAKEUP</button> -->
                             <button class="list-button">BODY</button>
                             <button class="list-button">FOOT</button>
                             <button class="list-button">HANDS</button>
@@ -88,12 +93,12 @@
                         </div>
                         <div class="more-creams-lower">
                             <div class="brand">
-                                <p>BRAND: <span style="color: rgba(99, 100, 216, 1);">ALL BRANDS</span></p>
-                                <p class="cream-bottom">SKIN TYPE: <span style="color: rgba(99, 100, 216, 1);">FOR ALL SKIN TYPES</span></p>
-                                <p class="cream-bottom">AGE: <span style="color: rgba(99, 100, 216, 1);">30+</span></p>
+                                <p>BRAND: <a href="#" class="cream-cls">ALL BRANDS</a></p>
+                                <p class="cream-bottom">SKIN TYPE: <a href="#" class="cream-cls">FOR ALL SKIN TYPES</a></p>
+                                <p class="cream-bottom">AGE: <a href="#" class="cream-cls">30+</a></p>
                             </div>
                             <div class="popularity">
-                                <p>SORT BY: <span style="color: rgba(99, 100, 216, 1);">BY POPULARITY</span></p>
+                                <p>SORT BY: <a href="#" class="cream-cls">BY POPULARITY</a></p>
                             </div>
                             
                         </div>
@@ -144,5 +149,16 @@
                 </div>
             </div>
         </div>
+        <script>
+
+            function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            } else {
+            x.style.display = "none";
+            }
+        }
+        </script>
     </body>
 </html>
