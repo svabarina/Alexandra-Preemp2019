@@ -34,10 +34,4 @@ class MainContent extends React.Component {
     }
 }
 
-
-
-
-
-
-
 export default MainContent;
