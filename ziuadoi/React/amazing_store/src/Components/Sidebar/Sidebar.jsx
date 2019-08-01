@@ -2,30 +2,39 @@ import React from 'react';
 import './Sidebar.css';
 
 
-const Sidebar = (props) => {
-    const categories = Object.keys(props.categories);
-    const subcategs = Object.values(props.categories);
-    return (
-        <div className="sidebar-container">
-            <span style={{float:'right', marginBottom: "10px"}}>{'All categories'}</span>
-            {categories.map((category, index) => {
-                category.subcategs.map((subcateg, index2) => {
-                return (
-                <div>
-                <button key={index} className="button-category-name">{category}</button>
-                <button key={index2} className="button-subcategs-name">{subcateg}</button>
-                </div>
+class Sidebar extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { isToggled: null };
+        this.press = this.press.bind(this)
+    }
+
+    categoryTitles = Object.keys(this.props.categories)
+     press(x) {
+        this.setState({ isToggled:this.state.isToggled === x ? null : x});
+        }
+
+    render() {
+        console.log(this.categoryTitles);
+        return (
+            
+            <div className="sidebar-container" >
+                <p className="all-categ">All categories</p>
+                {this.categoryTitles.map((cat,index) => 
+                    <div className="current-cat" key={index}>
+                <button className="button-category-name" onClick={()=>this.press(cat)} >{cat}</button>
+                    <ul type="none" className="align">
+                    {
+                        this.state.isToggled === cat && this.props.categories[cat].listItems.map((listItem, index) => {
+                            return (<li key={index} className="decoration">{listItem}</li>);
+                        }
+                        )}
+                 </ul>
+                 </div>
                 )}
-                )}
-            )}
-        </div>
-    )
+            </div>
+        )
+    }
 }
-
-
-// ideas.map(val => {
-//     val.premises.map(x => {
-//     });
-// });
 
 export default Sidebar;
