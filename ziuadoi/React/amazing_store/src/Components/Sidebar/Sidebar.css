@@ -1,5 +1,5 @@
 .sidebar-container {
-   position: absolute;
+   /* position: absolute; */
    margin-top: -5.5rem;
    background: #fff;
    width: 20%;
@@ -38,9 +38,9 @@ ul{
    text-align: left;
 }
 
-.current-cat {
+/* .current-cat {
 
-}
+} */
 
 .align {
    padding-left: 0px;

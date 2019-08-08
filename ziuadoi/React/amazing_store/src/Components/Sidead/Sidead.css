@@ -1,5 +1,8 @@
+
 img {
-    margin-left: -320px;
-    margin-top: 260px;
-    width: 34%;
+    /* margin-left: -320px;
+    margin-top: 260px; */
+    width: 21%;
+    /* position: absolute; */
+    padding-top: inherit;
 }

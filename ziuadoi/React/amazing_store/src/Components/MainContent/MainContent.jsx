@@ -2,7 +2,7 @@ import React from 'react';
 import './MainContent.css';
 import Sidebar from '../Sidebar/Sidebar';
 import Sidead from '../Sidead/Sidead';
-//import Products from '.'
+import Products from '../Products/Products'
 
 class MainContent extends React.Component {
     constructor(props) {
@@ -33,9 +33,9 @@ class MainContent extends React.Component {
     render(){
         return(
             <div className="content">
-            <Sidebar categories={this.state.categories} />
-            <Sidead />
-            {/* <Products /> */}
+                <Sidebar categories={this.state.categories} />
+                <Sidead />
+                <Products /> 
             </div>
         )
     }
